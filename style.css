@@ -1,0 +1,71 @@
+
+:root{
+    --background-color: #d4d4d8;
+    --board-color: #52525b;
+    --space-color:#27272a;
+    --mark-color: #e4e4e7;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    
+}
+/* Player button styling */
+.players {
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.players button{
+    padding: 1rem;
+    border-radius: 8px;
+    outline: none;
+    border-style: inset;
+}
+
+.players button:hover{
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: var(--space-color);
+    box-shadow: 0 0 8px 8px var(--mark-color);
+}
+
+/* Board Set Up and Styling */
+
+.board-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    background-color: aliceblue;
+    
+}
+
+.space {
+    background-color: black;
+}
+
+.space{
+    height: 80px;
+    width: 80px;
+}
