@@ -58,14 +58,26 @@ body {
     align-items: center;
     padding: 10px;
     background-color: aliceblue;
-    
+    height: clamp(100px, 50%, 1000px);
+    width: clamp(100px, calc(height), 1000px);
+
+   
 }
 
 .space {
+    display: flex;
     background-color: black;
+    color: #e4e4e7;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    height: 85%;
+    width: 85%;
 }
 
-.space{
-    height: 80px;
-    width: 80px;
+.space:hover {
+    cursor: pointer;
+    border-color: #e4e4e7;
+    border-style: inset;
 }
+
