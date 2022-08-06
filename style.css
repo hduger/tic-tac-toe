@@ -26,18 +26,27 @@ body {
     margin-top: 2rem;
 }
 
-.players button{
+.players button, .reset{
     padding: 1rem;
     border-radius: 8px;
     outline: none;
     border-style: inset;
 }
 
-.players button:hover{
+.players button:hover, .reset:hover{
     cursor: pointer;
     background-color: var(--background-color);
     color: var(--space-color);
     box-shadow: 0 0 8px 8px var(--mark-color);
+}
+
+.reset-con{
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    margin-top: 1rem;
 }
 
 /* Board Set Up and Styling */
@@ -80,4 +89,20 @@ body {
     border-color: #e4e4e7;
     border-style: inset;
 }
+
+.win-contain {
+    display: flex;
+    justify-content: center;
+}
+
+.win-message {
+    text-align: center;
+    color: var(--space-color);
+    font-size: 48px;
+    margin-top: 2rem;
+    padding: 1rem;
+    /* box-shadow: 0 0 8px 8px var(--mark-color); */
+    box-shadow: inset 0 0 8px 8px var(--mark-color);
+}
+
 
